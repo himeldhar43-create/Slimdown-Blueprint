@@ -13,6 +13,9 @@ export default function ShopPage() {
       title: "The 21-Day Smoothie Slim-Down",
       price: "9.99",
       slug: "smoothie-slim-down",
+      payhipLink: "https://payhip.com/b/nIp73",
+      image: "/smoothie.jpeg",
+      description: "A delicious, nutrient-packed smoothie guide engineered specifically to target stubborn bloating, optimize digestion, and support natural metabolic balance in 21 days.",
       bullets: [
         "20 Smoothie Recipes",
         "21-Day Meal Plan",
@@ -26,6 +29,9 @@ export default function ShopPage() {
       title: "4-Week Weight Loss Kickstart",
       price: "12.99",
       slug: "4-week-kickstart",
+      payhipLink: "https://payhip.com/b/fBC4n",
+      image: "/kickstart.jpeg",
+      description: "A gentle, low-impact exercise guide combined with a hormone-conscious meal template designed to safely wake up your metabolic rate from home without exhausting your body.",
       bullets: [
         "Home Workout Program",
         "Meal Plan",
@@ -38,6 +44,9 @@ export default function ShopPage() {
       title: "10-Week Transformation Guide",
       price: "19.99",
       slug: "10-week-transformation",
+      payhipLink: "https://payhip.com/b/iOpRW",
+      image: "/transformation.jpeg",
+      description: "Our complete progressive wellness blueprint designed to reshape your habits, optimize body re-composition, and establish lasting lifestyle changes.",
       bullets: [
         "Complete Workout System",
         "Nutrition Strategy",
@@ -51,6 +60,9 @@ export default function ShopPage() {
       price: "29.99",
       slug: "bundle",
       isBundle: true,
+      payhipLink: "https://payhip.com/b/L8DhG",
+      image: "/hero-bg.jpeg",
+      description: "Obtain every single resource in our product line. This complete package provides an adaptable, holistic plan for balanced wellness, nutrition, and strength.",
       bullets: [
         "The 21-Day Smoothie Slim-Down",
         "4-Week Weight Loss Kickstart",
@@ -85,30 +97,11 @@ export default function ShopPage() {
               slug={p.slug}
               bullets={p.bullets}
               isBundle={p.isBundle}
+              payhipLink={p.payhipLink}
+              image={p.image}
+              description={p.description}
             />
           ))}
-        </div>
-
-        {/* Brand Guarantees */}
-        <div className="mt-24 border-t border-gray-100 pt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <div className="space-y-2 bg-white p-8 rounded-3xl border border-gray-55 shadow-premium">
-            <h3 className="font-heading font-bold text-sm text-brand-dark">Instant Email PDF Delivery</h3>
-            <p className="text-gray-500 text-xs leading-relaxed">
-              Read comfortably on smart devices, tablet readers, computers, or print hard copies directly.
-            </p>
-          </div>
-          <div className="space-y-2 bg-white p-8 rounded-3xl border border-gray-55 shadow-premium">
-            <h3 className="font-heading font-bold text-sm text-brand-dark">Fully Secured Processing</h3>
-            <p className="text-gray-500 text-xs leading-relaxed">
-              Payments are completely processed through Payhip via fully encrypted merchant interfaces.
-            </p>
-          </div>
-          <div className="space-y-2 bg-white p-8 rounded-3xl border border-gray-55 shadow-premium">
-            <h3 className="font-heading font-bold text-sm text-brand-dark">Lifetime Document Revisions</h3>
-            <p className="text-gray-500 text-xs leading-relaxed">
-              Any future upgrades or nutritional recipes are automatically delivered straight to your inbox.
-            </p>
-          </div>
         </div>
       </div>
     </div>
